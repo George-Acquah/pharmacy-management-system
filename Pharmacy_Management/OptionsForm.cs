@@ -38,13 +38,13 @@ namespace Pharmacy_Management
             adminResetPassword.Dock = DockStyle.Fill; // Set the control to fill the options_panel
             options_panel.Controls.Add(adminResetPassword);
 
-            string userRole = MyAppContext.UserRole;
+            //string userRole = MyAppContext.UserRole;
 
-            if (userRole != "Admin")
-            {
-                pass_req_icon.Visible = false;
-                pass_req_lbl.Visible = false;
-            }
+            //if (userRole != "Admin")
+            //{
+            //    pass_req_icon.Visible = false;
+            //    pass_req_lbl.Visible = false;
+            //}
 
             userProfileControl.Visible = false; // Set the visibility to false
             shortcutsControl.Visible = false; // Set the visibility to false

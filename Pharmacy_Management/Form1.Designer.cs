@@ -50,12 +50,12 @@ namespace Pharmacy_Management
             this.bunifuCircleProgressbar1.ForeColor = System.Drawing.Color.White;
             this.bunifuCircleProgressbar1.LabelVisible = true;
             this.bunifuCircleProgressbar1.LineProgressThickness = 8;
-            this.bunifuCircleProgressbar1.LineThickness = 5;
+            this.bunifuCircleProgressbar1.LineThickness = 7;
             this.bunifuCircleProgressbar1.Location = new System.Drawing.Point(188, 119);
             this.bunifuCircleProgressbar1.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.bunifuCircleProgressbar1.MaxValue = 100;
             this.bunifuCircleProgressbar1.Name = "bunifuCircleProgressbar1";
-            this.bunifuCircleProgressbar1.ProgressBackColor = System.Drawing.Color.Gainsboro;
+            this.bunifuCircleProgressbar1.ProgressBackColor = System.Drawing.Color.White;
             this.bunifuCircleProgressbar1.ProgressColor = System.Drawing.Color.SeaGreen;
             this.bunifuCircleProgressbar1.Size = new System.Drawing.Size(139, 139);
             this.bunifuCircleProgressbar1.TabIndex = 0;

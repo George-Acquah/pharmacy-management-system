@@ -126,22 +126,24 @@ namespace Pharmacy_Management
 			FormManager.RegisterForm("HomeForm", new HomeForm());
             FormManager.RegisterForm("Login", new Login());
 
-            string userRole = MyAppContext.UserRole;
-            string userName = MyAppContext.userName;
+            //string userRole = MyAppContext.UserRole;
+            //string userName = MyAppContext.userName;
 
-            if (userName == null || userName == "" || userRole == null || userRole == "")
-            {
-                Console.WriteLine("Null checker working");
-                FormManager.NavigateTo("Login");
-                this.Hide();
-            }
-            else
-            {
-                populateComboBox();
-                //getLastId();
-                MyAppContext.saleId = NewId.getLastId(myLastSaleIdQusery, mySaleId);
-                Console.WriteLine("curret id: " + MyAppContext.saleId);
-            }
+            //if (userName == null || userName == "" || userRole == null || userRole == "")
+            //{
+            //    Console.WriteLine("Null checker working");
+            //    FormManager.NavigateTo("Login");
+            //    this.Hide();
+            //}
+            //else
+            //{
+            //    populateComboBox();
+            //    //getLastId();
+            //    MyAppContext.saleId = NewId.getLastId(myLastSaleIdQusery, mySaleId);
+            //}
+            populateComboBox();
+            //getLastId();
+            MyAppContext.saleId = NewId.getLastId(myLastSaleIdQusery, mySaleId);
         }
 
         int gridTotal = 0;
@@ -265,6 +267,8 @@ namespace Pharmacy_Management
                     int unitPrice = Convert.ToInt32(row.Cells[3].Value);
                     int totalPrice = Convert.ToInt32(row.Cells[4].Value);
 
+                    if (quantity != 0)
+                    {
                     // Build the SQL query to insert the sales data into the database
                     string query = "INSERT INTO SalesAnalytics_tbl (ItemName, ItemQuantity, UnitPrice, TotalPrice, SaleDate, Customer, SalePerson) " +
                                    "VALUES ( @ItemName, @ItemQuantity, @UnitPrice, @TotalPrice, @SaleDate, @Customer, @SalePerson)";
@@ -280,6 +284,7 @@ namespace Pharmacy_Management
 
                     // Execute the SQL query
                     cmd.ExecuteNonQuery();
+                    }
                 }
 
                 // Close the database connection
@@ -351,6 +356,7 @@ namespace Pharmacy_Management
                         if (inp == "cancel")
                         {
                             Stocklbl.Text = "Available Stock is " + newQty;
+                            gridTotal = 0;
                         }
 
                     }
@@ -377,6 +383,7 @@ namespace Pharmacy_Management
                 }
 
         }
+
         private void Printbtn_Click(object sender, EventArgs e)
         {
             GenerateReceipt();
@@ -403,6 +410,8 @@ namespace Pharmacy_Management
                 string customerName = customer_lbl.Text;
                 string salesPerson = MyAppContext.userName;
 
+                if (quantity != 0)
+                {
                 receipt.AppendLine($"{space} {smallSpace} Customer Name: {customerName}");
                 receipt.AppendLine($"{space} {smallSpace} Sales Person Name: {salesPerson}");
                 receipt.AppendLine($"{space} {smallSpace}  Item No: {itemNo}");
@@ -413,6 +422,7 @@ namespace Pharmacy_Management
                 receipt.AppendLine();
 
                 itemNo++;
+                }
             }
 
             receipt.AppendLine(space + smallSpace + "==================================================");

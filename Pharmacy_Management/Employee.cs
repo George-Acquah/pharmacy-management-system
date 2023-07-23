@@ -267,6 +267,8 @@ namespace Pharmacy_Management
                 populate();
                 fillComboBox();
             }
+            populate();
+            fillComboBox();
         }
 
         private void EmployeeDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -509,6 +511,7 @@ namespace Pharmacy_Management
         {
             reset();
         }
+
         //END FOCUS HANDLERS
     }
 }

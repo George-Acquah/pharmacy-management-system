@@ -201,5 +201,6 @@ namespace Pharmacy_Management
 			FormManager.NavigateTo("OptionsForm");
 			this.Hide();
 		}
-	}
+
+    }
 }

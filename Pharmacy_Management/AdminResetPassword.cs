@@ -18,6 +18,12 @@ namespace Pharmacy_Management
     {
         private UserManager userManager;
         SqlConnection dbConnection = new SqlConnection(DbConfigs.connectionString);
+
+        private string ID = null;
+        private string Username = null;
+        private bool PasswordResetRequested = false;
+        private string TemporaryPassword = null;
+
         public AdminResetPassword()
         {
             InitializeComponent();
@@ -56,11 +62,19 @@ namespace Pharmacy_Management
 
         private void reset_btn_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("clicked");
             if (ResetResquestsGridView.SelectedRows.Count > 0)
             {
-                DataGridViewRow selectedRow = ResetResquestsGridView.SelectedRows[0];
-                User selectedUser = selectedRow.DataBoundItem as User;
+                Console.WriteLine("clicked worked");
+                Console.WriteLine(ID);
+                Console.WriteLine(Username);
+                Console.WriteLine(PasswordResetRequested);
+                Console.WriteLine(TemporaryPassword);
+
+                User selectedUser = new User();
+                selectedUser.ID = ID;
+                selectedUser.Username = Username;
+                selectedUser.PasswordResetRequested = PasswordResetRequested;
+                selectedUser.TemporaryPassword = TemporaryPassword;
 
                 if (selectedUser != null)
                 {
@@ -77,6 +91,8 @@ namespace Pharmacy_Management
                     }
 
                     bool resetSuccess = userManager.ResetPassword(selectedUser.ID, selectedUser.Username, newPassword);
+                    
+                    Console.WriteLine("after: " + resetSuccess);
 
                     if (resetSuccess)
                     {
@@ -93,13 +109,23 @@ namespace Pharmacy_Management
                         MessageBox.Show("Password reset failed. User not found or password reset not requested.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
+                if (selectedUser == null)
+                {
+                    Console.Write("user not found");
+                }
             }
         }
 
         private void ResetResquestsGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             usernameTextBox.Text = ResetResquestsGridView.SelectedRows[0].Cells[1].Value.ToString();
+
             temporaryPasswordTextBox.Text = ResetResquestsGridView.SelectedRows[0].Cells[4].Value.ToString();
+
+            ID = ResetResquestsGridView.SelectedRows[0].Cells[2].Value.ToString();
+            Username = ResetResquestsGridView.SelectedRows[0].Cells[1].Value.ToString();
+            PasswordResetRequested = Convert.ToBoolean(ResetResquestsGridView.SelectedRows[0].Cells[3].Value.ToString());
+            TemporaryPassword = ResetResquestsGridView.SelectedRows[0].Cells[4].Value.ToString();
         }
     }
 }

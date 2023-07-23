@@ -101,9 +101,12 @@ namespace Pharmacy_Management.utils.contexts
         // Method to reset the user's password
         public bool ResetPassword(string username, string userId, string newPassword)
             {
-            User user = users.FirstOrDefault(u => u.Username.ToLower() == username.ToLower() && u.ID.ToString() == userId); ;
-                if (user != null && user.PasswordResetRequested)
+            
+            User user = users.FirstOrDefault(u => u.Username.ToLower() == username.ToLower() && u.ID.ToString() == userId);
+            Console.WriteLine("user: " + user);
+            if (user != null && user.PasswordResetRequested)
                 {
+            Console.WriteLine("user found ");
                     // Update the user's password
                     user.PasswordResetRequested = false;
                     user.TemporaryPassword = null;

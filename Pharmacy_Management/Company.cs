@@ -219,19 +219,20 @@ namespace Pharmacy_Management
 
             FormManager.RegisterForm("Login", new Login());
 
-            string userRole = MyAppContext.UserRole;
-            string userName = MyAppContext.userName;
+            //string userRole = MyAppContext.UserRole;
+            //string userName = MyAppContext.userName;
 
-            if (userName == null || userName == "" || userRole == null || userRole == "")
-            {
-                Console.WriteLine("Null checker working");
-                FormManager.NavigateTo("Login");
-                this.Close();
-            }
-            else
-            {
-                populate();
-            }
+            //if (userName == null || userName == "" || userRole == null || userRole == "")
+            //{
+            //    Console.WriteLine("Null checker working");
+            //    FormManager.NavigateTo("Login");
+            //    this.Hide();
+            //}
+            //else
+            //{
+            //    populate();
+            //}
+            populate();
         }
 
         private void CompanyDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)

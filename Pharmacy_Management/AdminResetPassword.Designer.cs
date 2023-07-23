@@ -52,11 +52,11 @@
             this.ResetResquestsGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.ResetResquestsGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Brown;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkCyan;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5, 0, 5, 6);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Salmon;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.ResetResquestsGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
@@ -64,9 +64,9 @@
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.ResetResquestsGridView.DefaultCellStyle = dataGridViewCellStyle3;
             this.ResetResquestsGridView.EnableHeadersVisualStyles = false;
@@ -86,13 +86,19 @@
             this.ResetResquestsGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.ResetResquestsGridView.RowHeadersVisible = false;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Brown;
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.DarkCyan;
             dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(5, 0, 5, 5);
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.ResetResquestsGridView.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.ResetResquestsGridView.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
+            this.ResetResquestsGridView.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.DarkCyan;
             this.ResetResquestsGridView.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(5, 0, 0, 6);
+            this.ResetResquestsGridView.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.DarkCyan;
+            this.ResetResquestsGridView.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
             this.ResetResquestsGridView.RowTemplate.Height = 35;
-            this.ResetResquestsGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.ResetResquestsGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ResetResquestsGridView.Size = new System.Drawing.Size(740, 358);
             this.ResetResquestsGridView.TabIndex = 13;
             this.ResetResquestsGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
@@ -103,7 +109,7 @@
             this.ResetResquestsGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.ResetResquestsGridView.ThemeStyle.BackColor = System.Drawing.Color.White;
             this.ResetResquestsGridView.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.ResetResquestsGridView.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Brown;
+            this.ResetResquestsGridView.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.DarkCyan;
             this.ResetResquestsGridView.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.ResetResquestsGridView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ResetResquestsGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
@@ -130,9 +136,9 @@
             this.usernameTextBox.HintForeColor = System.Drawing.Color.Empty;
             this.usernameTextBox.HintText = "";
             this.usernameTextBox.isPassword = false;
-            this.usernameTextBox.LineFocusedColor = System.Drawing.Color.Brown;
+            this.usernameTextBox.LineFocusedColor = System.Drawing.Color.DarkCyan;
             this.usernameTextBox.LineIdleColor = System.Drawing.Color.Gray;
-            this.usernameTextBox.LineMouseHoverColor = System.Drawing.Color.BlueViolet;
+            this.usernameTextBox.LineMouseHoverColor = System.Drawing.Color.LightSeaGreen;
             this.usernameTextBox.LineThickness = 3;
             this.usernameTextBox.Location = new System.Drawing.Point(14, 365);
             this.usernameTextBox.Margin = new System.Windows.Forms.Padding(4);
@@ -152,9 +158,9 @@
             this.temporaryPasswordTextBox.HintForeColor = System.Drawing.Color.Empty;
             this.temporaryPasswordTextBox.HintText = "";
             this.temporaryPasswordTextBox.isPassword = false;
-            this.temporaryPasswordTextBox.LineFocusedColor = System.Drawing.Color.Brown;
+            this.temporaryPasswordTextBox.LineFocusedColor = System.Drawing.Color.DarkCyan;
             this.temporaryPasswordTextBox.LineIdleColor = System.Drawing.Color.Gray;
-            this.temporaryPasswordTextBox.LineMouseHoverColor = System.Drawing.Color.BlueViolet;
+            this.temporaryPasswordTextBox.LineMouseHoverColor = System.Drawing.Color.LightSeaGreen;
             this.temporaryPasswordTextBox.LineThickness = 3;
             this.temporaryPasswordTextBox.Location = new System.Drawing.Point(276, 365);
             this.temporaryPasswordTextBox.Margin = new System.Windows.Forms.Padding(4);
@@ -173,9 +179,9 @@
             this.admin_pass_text.HintForeColor = System.Drawing.Color.Empty;
             this.admin_pass_text.HintText = "";
             this.admin_pass_text.isPassword = false;
-            this.admin_pass_text.LineFocusedColor = System.Drawing.Color.Brown;
+            this.admin_pass_text.LineFocusedColor = System.Drawing.Color.DarkCyan;
             this.admin_pass_text.LineIdleColor = System.Drawing.Color.Gray;
-            this.admin_pass_text.LineMouseHoverColor = System.Drawing.Color.BlueViolet;
+            this.admin_pass_text.LineMouseHoverColor = System.Drawing.Color.LightSeaGreen;
             this.admin_pass_text.LineThickness = 3;
             this.admin_pass_text.Location = new System.Drawing.Point(538, 365);
             this.admin_pass_text.Margin = new System.Windows.Forms.Padding(4);
@@ -211,7 +217,7 @@
             this.reset_btn.Margin = new System.Windows.Forms.Padding(2);
             this.reset_btn.Name = "reset_btn";
             this.reset_btn.Normalcolor = System.Drawing.Color.DarkCyan;
-            this.reset_btn.OnHovercolor = System.Drawing.Color.Green;
+            this.reset_btn.OnHovercolor = System.Drawing.Color.LightSeaGreen;
             this.reset_btn.OnHoverTextColor = System.Drawing.Color.White;
             this.reset_btn.selected = false;
             this.reset_btn.Size = new System.Drawing.Size(187, 48);
@@ -219,7 +225,7 @@
             this.reset_btn.Text = "Reset Password";
             this.reset_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.reset_btn.Textcolor = System.Drawing.Color.White;
-            this.reset_btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reset_btn.TextFont = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reset_btn.Click += new System.EventHandler(this.reset_btn_Click);
             // 
             // AdminResetPassword

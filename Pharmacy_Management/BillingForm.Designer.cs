@@ -79,13 +79,13 @@
             this.Qty.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Qty.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Qty.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.Qty.ForeColor = System.Drawing.Color.Brown;
+            this.Qty.ForeColor = System.Drawing.Color.Black;
             this.Qty.HintForeColor = System.Drawing.Color.Empty;
             this.Qty.HintText = "";
             this.Qty.isPassword = false;
-            this.Qty.LineFocusedColor = System.Drawing.Color.Brown;
+            this.Qty.LineFocusedColor = System.Drawing.Color.DarkCyan;
             this.Qty.LineIdleColor = System.Drawing.Color.Gray;
-            this.Qty.LineMouseHoverColor = System.Drawing.Color.BlueViolet;
+            this.Qty.LineMouseHoverColor = System.Drawing.Color.LightSeaGreen;
             this.Qty.LineThickness = 3;
             this.Qty.Location = new System.Drawing.Point(18, 184);
             this.Qty.Margin = new System.Windows.Forms.Padding(4);
@@ -110,13 +110,13 @@
             // 
             // Addbtn
             // 
-            this.Addbtn.BorderRadius = 5;
+            this.Addbtn.BorderRadius = 7;
             this.Addbtn.CheckedState.Parent = this.Addbtn;
             this.Addbtn.CustomImages.Parent = this.Addbtn;
             this.Addbtn.FillColor = System.Drawing.Color.DarkCyan;
             this.Addbtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Addbtn.ForeColor = System.Drawing.Color.White;
-            this.Addbtn.HoverState.FillColor = System.Drawing.Color.Turquoise;
+            this.Addbtn.HoverState.FillColor = System.Drawing.Color.LightSeaGreen;
             this.Addbtn.HoverState.ForeColor = System.Drawing.Color.White;
             this.Addbtn.HoverState.Parent = this.Addbtn;
             this.Addbtn.Location = new System.Drawing.Point(43, 284);
@@ -132,17 +132,18 @@
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.BillingGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.BillingGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.BillingGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.BillingGridView.BackgroundColor = System.Drawing.Color.White;
             this.BillingGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.BillingGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.BillingGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Brown;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkCyan;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5, 0, 5, 6);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Salmon;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.DarkCyan;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.BillingGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.BillingGridView.ColumnHeadersHeight = 35;
@@ -155,9 +156,10 @@
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(5, 0, 0, 5);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.BillingGridView.DefaultCellStyle = dataGridViewCellStyle3;
             this.BillingGridView.EnableHeadersVisualStyles = false;
@@ -169,21 +171,26 @@
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Brown;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.DarkCyan;
             dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(0, 0, 0, 6);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Salmon;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DarkCyan;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.BillingGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.BillingGridView.RowHeadersVisible = false;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Brown;
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.DarkCyan;
             dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(5, 0, 5, 5);
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.DarkCyan;
             this.BillingGridView.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.BillingGridView.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(0, 0, 0, 6);
+            this.BillingGridView.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.BillingGridView.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.DarkCyan;
+            this.BillingGridView.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(5, 0, 0, 3);
+            this.BillingGridView.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.DarkCyan;
             this.BillingGridView.RowTemplate.Height = 35;
             this.BillingGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.BillingGridView.ShowCellToolTips = false;
+            this.BillingGridView.ShowEditingIcon = false;
             this.BillingGridView.Size = new System.Drawing.Size(674, 441);
             this.BillingGridView.TabIndex = 11;
             this.BillingGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
@@ -194,7 +201,7 @@
             this.BillingGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.BillingGridView.ThemeStyle.BackColor = System.Drawing.Color.White;
             this.BillingGridView.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.BillingGridView.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Brown;
+            this.BillingGridView.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.DarkCyan;
             this.BillingGridView.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.BillingGridView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BillingGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
@@ -204,10 +211,10 @@
             this.BillingGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.BillingGridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.BillingGridView.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.BillingGridView.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.BillingGridView.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.DarkCyan;
             this.BillingGridView.ThemeStyle.RowsStyle.Height = 35;
-            this.BillingGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.BillingGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.BillingGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.DarkCyan;
+            this.BillingGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             this.BillingGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.BillingGridView_CellContentClick);
             // 
             // MedId
@@ -239,7 +246,7 @@
             // 
             this.TotalAmount.BackColor = System.Drawing.Color.Transparent;
             this.TotalAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalAmount.ForeColor = System.Drawing.Color.Brown;
+            this.TotalAmount.ForeColor = System.Drawing.Color.DarkCyan;
             this.TotalAmount.Location = new System.Drawing.Point(717, 453);
             this.TotalAmount.Name = "TotalAmount";
             this.TotalAmount.Size = new System.Drawing.Size(221, 41);
@@ -263,13 +270,13 @@
             // 
             // Printbtn
             // 
-            this.Printbtn.BorderRadius = 5;
+            this.Printbtn.BorderRadius = 7;
             this.Printbtn.CheckedState.Parent = this.Printbtn;
             this.Printbtn.CustomImages.Parent = this.Printbtn;
-            this.Printbtn.FillColor = System.Drawing.Color.Brown;
+            this.Printbtn.FillColor = System.Drawing.Color.DarkCyan;
             this.Printbtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Printbtn.ForeColor = System.Drawing.Color.White;
-            this.Printbtn.HoverState.FillColor = System.Drawing.Color.Salmon;
+            this.Printbtn.HoverState.FillColor = System.Drawing.Color.LightSeaGreen;
             this.Printbtn.HoverState.ForeColor = System.Drawing.Color.White;
             this.Printbtn.HoverState.Parent = this.Printbtn;
             this.Printbtn.Location = new System.Drawing.Point(953, 500);
@@ -282,13 +289,13 @@
             // 
             // homebtn
             // 
-            this.homebtn.BorderRadius = 5;
+            this.homebtn.BorderRadius = 7;
             this.homebtn.CheckedState.Parent = this.homebtn;
             this.homebtn.CustomImages.Parent = this.homebtn;
-            this.homebtn.FillColor = System.Drawing.Color.Brown;
+            this.homebtn.FillColor = System.Drawing.Color.DarkCyan;
             this.homebtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homebtn.ForeColor = System.Drawing.Color.White;
-            this.homebtn.HoverState.FillColor = System.Drawing.Color.Salmon;
+            this.homebtn.HoverState.FillColor = System.Drawing.Color.LightSeaGreen;
             this.homebtn.HoverState.ForeColor = System.Drawing.Color.White;
             this.homebtn.HoverState.Parent = this.homebtn;
             this.homebtn.Location = new System.Drawing.Point(550, 500);
@@ -356,13 +363,13 @@
             this.customer_lbl.BackColor = System.Drawing.Color.WhiteSmoke;
             this.customer_lbl.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.customer_lbl.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.customer_lbl.ForeColor = System.Drawing.Color.Brown;
+            this.customer_lbl.ForeColor = System.Drawing.Color.Black;
             this.customer_lbl.HintForeColor = System.Drawing.Color.Empty;
             this.customer_lbl.HintText = "";
             this.customer_lbl.isPassword = false;
-            this.customer_lbl.LineFocusedColor = System.Drawing.Color.Brown;
+            this.customer_lbl.LineFocusedColor = System.Drawing.Color.DarkCyan;
             this.customer_lbl.LineIdleColor = System.Drawing.Color.Gray;
-            this.customer_lbl.LineMouseHoverColor = System.Drawing.Color.BlueViolet;
+            this.customer_lbl.LineMouseHoverColor = System.Drawing.Color.LightSeaGreen;
             this.customer_lbl.LineThickness = 3;
             this.customer_lbl.Location = new System.Drawing.Point(250, 184);
             this.customer_lbl.Margin = new System.Windows.Forms.Padding(4);
@@ -376,13 +383,13 @@
             // 
             // bill_clear
             // 
-            this.bill_clear.BorderRadius = 5;
+            this.bill_clear.BorderRadius = 7;
             this.bill_clear.CheckedState.Parent = this.bill_clear;
             this.bill_clear.CustomImages.Parent = this.bill_clear;
             this.bill_clear.FillColor = System.Drawing.Color.DarkCyan;
             this.bill_clear.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bill_clear.ForeColor = System.Drawing.Color.White;
-            this.bill_clear.HoverState.FillColor = System.Drawing.Color.Turquoise;
+            this.bill_clear.HoverState.FillColor = System.Drawing.Color.LightSeaGreen;
             this.bill_clear.HoverState.ForeColor = System.Drawing.Color.White;
             this.bill_clear.HoverState.Parent = this.bill_clear;
             this.bill_clear.Location = new System.Drawing.Point(279, 284);
@@ -409,13 +416,13 @@
             // 
             // bill_cancel_btn
             // 
-            this.bill_cancel_btn.BorderRadius = 5;
+            this.bill_cancel_btn.BorderRadius = 7;
             this.bill_cancel_btn.CheckedState.Parent = this.bill_cancel_btn;
             this.bill_cancel_btn.CustomImages.Parent = this.bill_cancel_btn;
-            this.bill_cancel_btn.FillColor = System.Drawing.Color.Brown;
+            this.bill_cancel_btn.FillColor = System.Drawing.Color.DarkCyan;
             this.bill_cancel_btn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bill_cancel_btn.ForeColor = System.Drawing.Color.White;
-            this.bill_cancel_btn.HoverState.FillColor = System.Drawing.Color.Salmon;
+            this.bill_cancel_btn.HoverState.FillColor = System.Drawing.Color.LightSeaGreen;
             this.bill_cancel_btn.HoverState.ForeColor = System.Drawing.Color.White;
             this.bill_cancel_btn.HoverState.Parent = this.bill_cancel_btn;
             this.bill_cancel_btn.Location = new System.Drawing.Point(764, 500);
@@ -431,7 +438,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1174, 566);
+            this.ClientSize = new System.Drawing.Size(1149, 566);
             this.Controls.Add(this.bill_cancel_btn);
             this.Controls.Add(this.bill_combo_err);
             this.Controls.Add(this.bill_clear);

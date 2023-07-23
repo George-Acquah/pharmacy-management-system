@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employee));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employee));
             this.EmpLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.empnametb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.empagetb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -44,7 +44,6 @@
             this.deleteempbtn = new Guna.UI2.WinForms.Guna2Button();
             this.updateempbtn = new Guna.UI2.WinForms.Guna2Button();
             this.addempbtn = new Guna.UI2.WinForms.Guna2Button();
-            this.EmployeeDataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
             this.emppasstb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.med_sal_err = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.med_age_err = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -57,9 +56,10 @@
             this.sh_roles_tt = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.rolescb = new Guna.UI2.WinForms.Guna2ComboBox();
             this.emp_clear = new Guna.UI2.WinForms.Guna2Button();
-            ((System.ComponentModel.ISupportInitialize)(this.EmployeeDataGridView)).BeginInit();
+            this.EmployeeDataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.emp_back_icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.view_roles_icon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmployeeDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // EmpLabel
@@ -78,13 +78,13 @@
             this.empnametb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.empnametb.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.empnametb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.empnametb.ForeColor = System.Drawing.Color.Brown;
+            this.empnametb.ForeColor = System.Drawing.Color.Black;
             this.empnametb.HintForeColor = System.Drawing.Color.Empty;
             this.empnametb.HintText = "";
             this.empnametb.isPassword = false;
-            this.empnametb.LineFocusedColor = System.Drawing.Color.Brown;
+            this.empnametb.LineFocusedColor = System.Drawing.Color.DarkCyan;
             this.empnametb.LineIdleColor = System.Drawing.Color.Gray;
-            this.empnametb.LineMouseHoverColor = System.Drawing.Color.BlueViolet;
+            this.empnametb.LineMouseHoverColor = System.Drawing.Color.Cyan;
             this.empnametb.LineThickness = 3;
             this.empnametb.Location = new System.Drawing.Point(33, 219);
             this.empnametb.Margin = new System.Windows.Forms.Padding(4);
@@ -102,13 +102,13 @@
             this.empagetb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.empagetb.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.empagetb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.empagetb.ForeColor = System.Drawing.Color.Brown;
+            this.empagetb.ForeColor = System.Drawing.Color.Black;
             this.empagetb.HintForeColor = System.Drawing.Color.Brown;
             this.empagetb.HintText = "";
             this.empagetb.isPassword = false;
-            this.empagetb.LineFocusedColor = System.Drawing.Color.Brown;
+            this.empagetb.LineFocusedColor = System.Drawing.Color.DarkCyan;
             this.empagetb.LineIdleColor = System.Drawing.Color.Gray;
-            this.empagetb.LineMouseHoverColor = System.Drawing.Color.BlueViolet;
+            this.empagetb.LineMouseHoverColor = System.Drawing.Color.Cyan;
             this.empagetb.LineThickness = 3;
             this.empagetb.Location = new System.Drawing.Point(272, 268);
             this.empagetb.Margin = new System.Windows.Forms.Padding(4);
@@ -126,13 +126,13 @@
             this.empsaltb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.empsaltb.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.empsaltb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.empsaltb.ForeColor = System.Drawing.Color.Brown;
+            this.empsaltb.ForeColor = System.Drawing.Color.Black;
             this.empsaltb.HintForeColor = System.Drawing.Color.Empty;
             this.empsaltb.HintText = "";
             this.empsaltb.isPassword = false;
-            this.empsaltb.LineFocusedColor = System.Drawing.Color.Brown;
+            this.empsaltb.LineFocusedColor = System.Drawing.Color.DarkCyan;
             this.empsaltb.LineIdleColor = System.Drawing.Color.Gray;
-            this.empsaltb.LineMouseHoverColor = System.Drawing.Color.BlueViolet;
+            this.empsaltb.LineMouseHoverColor = System.Drawing.Color.Cyan;
             this.empsaltb.LineThickness = 3;
             this.empsaltb.Location = new System.Drawing.Point(272, 110);
             this.empsaltb.Margin = new System.Windows.Forms.Padding(4);
@@ -151,13 +151,13 @@
             this.empidtb.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.empidtb.Enabled = false;
             this.empidtb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.empidtb.ForeColor = System.Drawing.Color.Brown;
+            this.empidtb.ForeColor = System.Drawing.Color.Black;
             this.empidtb.HintForeColor = System.Drawing.Color.Empty;
             this.empidtb.HintText = "";
             this.empidtb.isPassword = false;
-            this.empidtb.LineFocusedColor = System.Drawing.Color.Brown;
+            this.empidtb.LineFocusedColor = System.Drawing.Color.DarkCyan;
             this.empidtb.LineIdleColor = System.Drawing.Color.Gray;
-            this.empidtb.LineMouseHoverColor = System.Drawing.Color.BlueViolet;
+            this.empidtb.LineMouseHoverColor = System.Drawing.Color.Cyan;
             this.empidtb.LineThickness = 3;
             this.empidtb.Location = new System.Drawing.Point(33, 110);
             this.empidtb.Margin = new System.Windows.Forms.Padding(4);
@@ -175,13 +175,13 @@
             this.empphonetb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.empphonetb.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.empphonetb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.empphonetb.ForeColor = System.Drawing.Color.Brown;
+            this.empphonetb.ForeColor = System.Drawing.Color.Black;
             this.empphonetb.HintForeColor = System.Drawing.Color.Empty;
             this.empphonetb.HintText = "";
             this.empphonetb.isPassword = false;
-            this.empphonetb.LineFocusedColor = System.Drawing.Color.Brown;
+            this.empphonetb.LineFocusedColor = System.Drawing.Color.DarkCyan;
             this.empphonetb.LineIdleColor = System.Drawing.Color.Gray;
-            this.empphonetb.LineMouseHoverColor = System.Drawing.Color.BlueViolet;
+            this.empphonetb.LineMouseHoverColor = System.Drawing.Color.Cyan;
             this.empphonetb.LineThickness = 3;
             this.empphonetb.Location = new System.Drawing.Point(272, 193);
             this.empphonetb.Margin = new System.Windows.Forms.Padding(4);
@@ -202,7 +202,7 @@
             this.backempbtn.FillColor = System.Drawing.Color.DarkCyan;
             this.backempbtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.backempbtn.ForeColor = System.Drawing.Color.White;
-            this.backempbtn.HoverState.FillColor = System.Drawing.Color.Aquamarine;
+            this.backempbtn.HoverState.FillColor = System.Drawing.Color.LightSeaGreen;
             this.backempbtn.HoverState.ForeColor = System.Drawing.Color.White;
             this.backempbtn.HoverState.Parent = this.backempbtn;
             this.backempbtn.Location = new System.Drawing.Point(94, 509);
@@ -221,7 +221,7 @@
             this.deleteempbtn.FillColor = System.Drawing.Color.DarkCyan;
             this.deleteempbtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.deleteempbtn.ForeColor = System.Drawing.Color.White;
-            this.deleteempbtn.HoverState.FillColor = System.Drawing.Color.Aquamarine;
+            this.deleteempbtn.HoverState.FillColor = System.Drawing.Color.LightSeaGreen;
             this.deleteempbtn.HoverState.ForeColor = System.Drawing.Color.White;
             this.deleteempbtn.HoverState.Parent = this.deleteempbtn;
             this.deleteempbtn.Location = new System.Drawing.Point(345, 439);
@@ -240,7 +240,7 @@
             this.updateempbtn.FillColor = System.Drawing.Color.DarkCyan;
             this.updateempbtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.updateempbtn.ForeColor = System.Drawing.Color.White;
-            this.updateempbtn.HoverState.FillColor = System.Drawing.Color.Aquamarine;
+            this.updateempbtn.HoverState.FillColor = System.Drawing.Color.LightSeaGreen;
             this.updateempbtn.HoverState.ForeColor = System.Drawing.Color.White;
             this.updateempbtn.HoverState.Parent = this.updateempbtn;
             this.updateempbtn.Location = new System.Drawing.Point(182, 439);
@@ -259,7 +259,7 @@
             this.addempbtn.FillColor = System.Drawing.Color.DarkCyan;
             this.addempbtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.addempbtn.ForeColor = System.Drawing.Color.White;
-            this.addempbtn.HoverState.FillColor = System.Drawing.Color.Aquamarine;
+            this.addempbtn.HoverState.FillColor = System.Drawing.Color.LightSeaGreen;
             this.addempbtn.HoverState.ForeColor = System.Drawing.Color.White;
             this.addempbtn.HoverState.Parent = this.addempbtn;
             this.addempbtn.Location = new System.Drawing.Point(21, 439);
@@ -270,92 +270,18 @@
             this.addempbtn.Text = "ADD";
             this.addempbtn.Click += new System.EventHandler(this.addempbtn_Click);
             // 
-            // EmployeeDataGridView
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.EmployeeDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.EmployeeDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.EmployeeDataGridView.BackgroundColor = System.Drawing.Color.White;
-            this.EmployeeDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.EmployeeDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.EmployeeDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Brown;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Salmon;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.EmployeeDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.EmployeeDataGridView.ColumnHeadersHeight = 35;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.EmployeeDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
-            this.EmployeeDataGridView.EnableHeadersVisualStyles = false;
-            this.EmployeeDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.EmployeeDataGridView.Location = new System.Drawing.Point(488, 12);
-            this.EmployeeDataGridView.Name = "EmployeeDataGridView";
-            this.EmployeeDataGridView.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Brown;
-            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(0, 6, 0, 6);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Salmon;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.EmployeeDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.EmployeeDataGridView.RowHeadersVisible = false;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.EmployeeDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.EmployeeDataGridView.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(0, 6, 0, 6);
-            this.EmployeeDataGridView.RowTemplate.Height = 35;
-            this.EmployeeDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.EmployeeDataGridView.Size = new System.Drawing.Size(711, 542);
-            this.EmployeeDataGridView.TabIndex = 19;
-            this.EmployeeDataGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.EmployeeDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.EmployeeDataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.EmployeeDataGridView.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.EmployeeDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.EmployeeDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.EmployeeDataGridView.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.EmployeeDataGridView.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.EmployeeDataGridView.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Brown;
-            this.EmployeeDataGridView.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.EmployeeDataGridView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmployeeDataGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.EmployeeDataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.EmployeeDataGridView.ThemeStyle.HeaderStyle.Height = 35;
-            this.EmployeeDataGridView.ThemeStyle.ReadOnly = false;
-            this.EmployeeDataGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.EmployeeDataGridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.EmployeeDataGridView.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.EmployeeDataGridView.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.EmployeeDataGridView.ThemeStyle.RowsStyle.Height = 35;
-            this.EmployeeDataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.EmployeeDataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.EmployeeDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EmployeeDataGridView_CellContentClick);
-            // 
             // emppasstb
             // 
             this.emppasstb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.emppasstb.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.emppasstb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.emppasstb.ForeColor = System.Drawing.Color.Brown;
+            this.emppasstb.ForeColor = System.Drawing.Color.Black;
             this.emppasstb.HintForeColor = System.Drawing.Color.Empty;
             this.emppasstb.HintText = "";
             this.emppasstb.isPassword = false;
-            this.emppasstb.LineFocusedColor = System.Drawing.Color.Brown;
+            this.emppasstb.LineFocusedColor = System.Drawing.Color.DarkCyan;
             this.emppasstb.LineIdleColor = System.Drawing.Color.Gray;
-            this.emppasstb.LineMouseHoverColor = System.Drawing.Color.BlueViolet;
+            this.emppasstb.LineMouseHoverColor = System.Drawing.Color.Cyan;
             this.emppasstb.LineThickness = 3;
             this.emppasstb.Location = new System.Drawing.Point(272, 345);
             this.emppasstb.Margin = new System.Windows.Forms.Padding(4);
@@ -519,7 +445,7 @@
             this.emp_clear.FillColor = System.Drawing.Color.DarkCyan;
             this.emp_clear.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.emp_clear.ForeColor = System.Drawing.Color.White;
-            this.emp_clear.HoverState.FillColor = System.Drawing.Color.Aquamarine;
+            this.emp_clear.HoverState.FillColor = System.Drawing.Color.LightSeaGreen;
             this.emp_clear.HoverState.ForeColor = System.Drawing.Color.White;
             this.emp_clear.HoverState.Parent = this.emp_clear;
             this.emp_clear.Location = new System.Drawing.Point(272, 509);
@@ -530,12 +456,94 @@
             this.emp_clear.Text = "CLEAR";
             this.emp_clear.Click += new System.EventHandler(this.emp_clear_Click);
             // 
+            // EmployeeDataGridView
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.EmployeeDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.EmployeeDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.EmployeeDataGridView.BackgroundColor = System.Drawing.Color.White;
+            this.EmployeeDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EmployeeDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.EmployeeDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.EmployeeDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.EmployeeDataGridView.ColumnHeadersHeight = 35;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.EmployeeDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            this.EmployeeDataGridView.EnableHeadersVisualStyles = false;
+            this.EmployeeDataGridView.GridColor = System.Drawing.Color.WhiteSmoke;
+            this.EmployeeDataGridView.Location = new System.Drawing.Point(488, 12);
+            this.EmployeeDataGridView.Name = "EmployeeDataGridView";
+            this.EmployeeDataGridView.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Brown;
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(0, 6, 0, 6);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Salmon;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.EmployeeDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.EmployeeDataGridView.RowHeadersVisible = false;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.EmployeeDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.EmployeeDataGridView.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
+            this.EmployeeDataGridView.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.DarkCyan;
+            this.EmployeeDataGridView.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(0, 6, 0, 6);
+            this.EmployeeDataGridView.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.DarkCyan;
+            this.EmployeeDataGridView.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.EmployeeDataGridView.RowTemplate.Height = 35;
+            this.EmployeeDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.EmployeeDataGridView.Size = new System.Drawing.Size(711, 542);
+            this.EmployeeDataGridView.TabIndex = 41;
+            this.EmployeeDataGridView.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.EmployeeDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.EmployeeDataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.EmployeeDataGridView.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.DarkCyan;
+            this.EmployeeDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.DarkCyan;
+            this.EmployeeDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.EmployeeDataGridView.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.EmployeeDataGridView.ThemeStyle.GridColor = System.Drawing.Color.WhiteSmoke;
+            this.EmployeeDataGridView.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.DarkCyan;
+            this.EmployeeDataGridView.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.EmployeeDataGridView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmployeeDataGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.EmployeeDataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.EmployeeDataGridView.ThemeStyle.HeaderStyle.Height = 35;
+            this.EmployeeDataGridView.ThemeStyle.ReadOnly = false;
+            this.EmployeeDataGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.EmployeeDataGridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.EmployeeDataGridView.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.EmployeeDataGridView.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.DarkCyan;
+            this.EmployeeDataGridView.ThemeStyle.RowsStyle.Height = 35;
+            this.EmployeeDataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.DarkCyan;
+            this.EmployeeDataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.EmployeeDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EmployeeDataGridView_CellContentClick);
+            // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1211, 566);
+            this.Controls.Add(this.EmployeeDataGridView);
             this.Controls.Add(this.emp_clear);
             this.Controls.Add(this.view_roles_icon);
             this.Controls.Add(this.sh_roles_tt);
@@ -548,7 +556,6 @@
             this.Controls.Add(this.med_age_err);
             this.Controls.Add(this.med_sal_err);
             this.Controls.Add(this.emppasstb);
-            this.Controls.Add(this.EmployeeDataGridView);
             this.Controls.Add(this.backempbtn);
             this.Controls.Add(this.deleteempbtn);
             this.Controls.Add(this.updateempbtn);
@@ -566,9 +573,9 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Employee_FormClosing);
             this.Load += new System.EventHandler(this.Employee_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Employee_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.EmployeeDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emp_back_icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.view_roles_icon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmployeeDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -586,7 +593,6 @@
         private Guna.UI2.WinForms.Guna2Button deleteempbtn;
         private Guna.UI2.WinForms.Guna2Button updateempbtn;
         private Guna.UI2.WinForms.Guna2Button addempbtn;
-        private Guna.UI2.WinForms.Guna2DataGridView EmployeeDataGridView;
         private Bunifu.Framework.UI.BunifuMaterialTextbox emppasstb;
         private Guna.UI2.WinForms.Guna2HtmlLabel med_sal_err;
         private Guna.UI2.WinForms.Guna2HtmlLabel med_age_err;
@@ -599,5 +605,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel sh_roles_tt;
         private Guna.UI2.WinForms.Guna2ComboBox rolescb;
         private Guna.UI2.WinForms.Guna2Button emp_clear;
+        private Guna.UI2.WinForms.Guna2DataGridView EmployeeDataGridView;
     }
 }

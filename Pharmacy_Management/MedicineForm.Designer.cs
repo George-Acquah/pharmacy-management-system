@@ -62,7 +62,7 @@
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Brown;
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.DarkCyan;
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(61, 12);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(257, 44);
@@ -148,13 +148,13 @@
             this.mednametb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.mednametb.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.mednametb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.mednametb.ForeColor = System.Drawing.Color.Brown;
+            this.mednametb.ForeColor = System.Drawing.Color.Black;
             this.mednametb.HintForeColor = System.Drawing.Color.Empty;
             this.mednametb.HintText = "";
             this.mednametb.isPassword = false;
-            this.mednametb.LineFocusedColor = System.Drawing.Color.Brown;
+            this.mednametb.LineFocusedColor = System.Drawing.Color.DarkCyan;
             this.mednametb.LineIdleColor = System.Drawing.Color.Gray;
-            this.mednametb.LineMouseHoverColor = System.Drawing.Color.BlueViolet;
+            this.mednametb.LineMouseHoverColor = System.Drawing.Color.LightSeaGreen;
             this.mednametb.LineThickness = 3;
             this.mednametb.Location = new System.Drawing.Point(13, 83);
             this.mednametb.Margin = new System.Windows.Forms.Padding(4);
@@ -171,13 +171,13 @@
             this.qtytb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.qtytb.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.qtytb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.qtytb.ForeColor = System.Drawing.Color.Brown;
+            this.qtytb.ForeColor = System.Drawing.Color.Black;
             this.qtytb.HintForeColor = System.Drawing.Color.Empty;
             this.qtytb.HintText = "";
             this.qtytb.isPassword = false;
-            this.qtytb.LineFocusedColor = System.Drawing.Color.Brown;
+            this.qtytb.LineFocusedColor = System.Drawing.Color.DarkCyan;
             this.qtytb.LineIdleColor = System.Drawing.Color.Gray;
-            this.qtytb.LineMouseHoverColor = System.Drawing.Color.BlueViolet;
+            this.qtytb.LineMouseHoverColor = System.Drawing.Color.LightSeaGreen;
             this.qtytb.LineThickness = 3;
             this.qtytb.Location = new System.Drawing.Point(296, 282);
             this.qtytb.Margin = new System.Windows.Forms.Padding(4);
@@ -194,13 +194,13 @@
             this.sptb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.sptb.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.sptb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.sptb.ForeColor = System.Drawing.Color.Brown;
+            this.sptb.ForeColor = System.Drawing.Color.Black;
             this.sptb.HintForeColor = System.Drawing.Color.Brown;
             this.sptb.HintText = "";
             this.sptb.isPassword = false;
-            this.sptb.LineFocusedColor = System.Drawing.Color.Brown;
+            this.sptb.LineFocusedColor = System.Drawing.Color.DarkCyan;
             this.sptb.LineIdleColor = System.Drawing.Color.Gray;
-            this.sptb.LineMouseHoverColor = System.Drawing.Color.BlueViolet;
+            this.sptb.LineMouseHoverColor = System.Drawing.Color.LightSeaGreen;
             this.sptb.LineThickness = 3;
             this.sptb.Location = new System.Drawing.Point(296, 188);
             this.sptb.Margin = new System.Windows.Forms.Padding(4);
@@ -218,13 +218,13 @@
             this.bptb.BackColor = System.Drawing.Color.WhiteSmoke;
             this.bptb.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.bptb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bptb.ForeColor = System.Drawing.Color.Brown;
+            this.bptb.ForeColor = System.Drawing.Color.Black;
             this.bptb.HintForeColor = System.Drawing.Color.Empty;
             this.bptb.HintText = "";
             this.bptb.isPassword = false;
-            this.bptb.LineFocusedColor = System.Drawing.Color.Brown;
+            this.bptb.LineFocusedColor = System.Drawing.Color.DarkCyan;
             this.bptb.LineIdleColor = System.Drawing.Color.Gray;
-            this.bptb.LineMouseHoverColor = System.Drawing.Color.BlueViolet;
+            this.bptb.LineMouseHoverColor = System.Drawing.Color.LightSeaGreen;
             this.bptb.LineThickness = 3;
             this.bptb.Location = new System.Drawing.Point(296, 83);
             this.bptb.Margin = new System.Windows.Forms.Padding(4);
@@ -241,7 +241,7 @@
             // 
             this.ExpireDate.BackColor = System.Drawing.Color.Black;
             this.ExpireDate.CheckedState.Parent = this.ExpireDate;
-            this.ExpireDate.FillColor = System.Drawing.Color.Brown;
+            this.ExpireDate.FillColor = System.Drawing.Color.DarkCyan;
             this.ExpireDate.ForeColor = System.Drawing.Color.White;
             this.ExpireDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.ExpireDate.HoverState.Parent = this.ExpireDate;
@@ -278,10 +278,10 @@
             this.guna2Button1.BorderRadius = 5;
             this.guna2Button1.CheckedState.Parent = this.guna2Button1;
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.Brown;
+            this.guna2Button1.FillColor = System.Drawing.Color.DarkCyan;
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.Salmon;
+            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.LightSeaGreen;
             this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Location = new System.Drawing.Point(13, 413);
@@ -297,10 +297,10 @@
             this.guna2Button2.BorderRadius = 5;
             this.guna2Button2.CheckedState.Parent = this.guna2Button2;
             this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.Brown;
+            this.guna2Button2.FillColor = System.Drawing.Color.DarkCyan;
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.Salmon;
+            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.LightSeaGreen;
             this.guna2Button2.HoverState.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
             this.guna2Button2.Location = new System.Drawing.Point(178, 413);
@@ -316,10 +316,10 @@
             this.guna2Button3.BorderRadius = 5;
             this.guna2Button3.CheckedState.Parent = this.guna2Button3;
             this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.FillColor = System.Drawing.Color.Brown;
+            this.guna2Button3.FillColor = System.Drawing.Color.DarkCyan;
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.FillColor = System.Drawing.Color.Salmon;
+            this.guna2Button3.HoverState.FillColor = System.Drawing.Color.LightSeaGreen;
             this.guna2Button3.HoverState.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
             this.guna2Button3.Location = new System.Drawing.Point(356, 413);
@@ -335,10 +335,10 @@
             this.guna2Button4.BorderRadius = 5;
             this.guna2Button4.CheckedState.Parent = this.guna2Button4;
             this.guna2Button4.CustomImages.Parent = this.guna2Button4;
-            this.guna2Button4.FillColor = System.Drawing.Color.Brown;
+            this.guna2Button4.FillColor = System.Drawing.Color.DarkCyan;
             this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.HoverState.FillColor = System.Drawing.Color.Salmon;
+            this.guna2Button4.HoverState.FillColor = System.Drawing.Color.LightSeaGreen;
             this.guna2Button4.HoverState.ForeColor = System.Drawing.Color.White;
             this.guna2Button4.HoverState.Parent = this.guna2Button4;
             this.guna2Button4.Location = new System.Drawing.Point(99, 488);
@@ -367,7 +367,7 @@
             // 
             this.sh_comp_tt.BackColor = System.Drawing.Color.Transparent;
             this.sh_comp_tt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sh_comp_tt.ForeColor = System.Drawing.Color.Brown;
+            this.sh_comp_tt.ForeColor = System.Drawing.Color.DarkCyan;
             this.sh_comp_tt.Location = new System.Drawing.Point(154, 256);
             this.sh_comp_tt.Name = "sh_comp_tt";
             this.sh_comp_tt.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
@@ -437,10 +437,10 @@
             this.med_clear.BorderRadius = 5;
             this.med_clear.CheckedState.Parent = this.med_clear;
             this.med_clear.CustomImages.Parent = this.med_clear;
-            this.med_clear.FillColor = System.Drawing.Color.Brown;
+            this.med_clear.FillColor = System.Drawing.Color.DarkCyan;
             this.med_clear.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.med_clear.ForeColor = System.Drawing.Color.White;
-            this.med_clear.HoverState.FillColor = System.Drawing.Color.Salmon;
+            this.med_clear.HoverState.FillColor = System.Drawing.Color.LightSeaGreen;
             this.med_clear.HoverState.ForeColor = System.Drawing.Color.White;
             this.med_clear.HoverState.Parent = this.med_clear;
             this.med_clear.Location = new System.Drawing.Point(270, 488);
@@ -476,6 +476,7 @@
             this.Controls.Add(this.mednametb);
             this.Controls.Add(this.MedicineGridView);
             this.Controls.Add(this.guna2HtmlLabel1);
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MedicineForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
