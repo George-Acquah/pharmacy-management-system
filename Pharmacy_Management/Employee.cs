@@ -30,7 +30,17 @@ namespace Pharmacy_Management
         public void populate()
         {
             dbConnection.Open();
-            string Myquery = "select * from Employee_tb";
+            
+            string Myquery; ;
+            if (userRole == "Admin")
+            {
+                Myquery = "select * from Employee_tb";
+            }
+            else
+            {
+                
+                Myquery = "select EmpName, EmpPhone, EmpRole from Employee_tb";
+            }
             SqlDataAdapter dataAdapter = new SqlDataAdapter(Myquery, dbConnection);
             SqlCommandBuilder commandBuilder = new SqlCommandBuilder(dataAdapter);
             var ds = new DataSet();
@@ -253,32 +263,52 @@ namespace Pharmacy_Management
 
             FormManager.RegisterForm("Login", new Login());
 
-            string userRole = MyAppContext.UserRole;
-            string userName = MyAppContext.userName;
+            //string userRole = MyAppContext.UserRole;
+            //string userName = MyAppContext.userName;
 
-            if (userName == null || userName == "" || userRole == null || userRole == "")
-            {
-                Console.WriteLine("Null checker working");
-                FormManager.NavigateTo("Login");
-                this.Hide();
-            }
-            else
-            {
-                populate();
-                fillComboBox();
-            }
+            //if (userName == null || userName == "" || userRole == null || userRole == "")
+            //{
+            //    Console.WriteLine("Null checker working");
+            //    FormManager.NavigateTo("Login");
+            //    this.Hide();
+            //}
+            //else
+            //{
+            //    populate();
+            //    fillComboBox();
+            //}
             populate();
             fillComboBox();
+            if (userRole != "Admin")
+            {
+                empnametb.Enabled = false;
+                empphonetb.Enabled = false;
+                empsaltb.Enabled = false;
+                empagetb.Enabled = false;
+                emppasstb.Enabled = false;
+                rolescb.Enabled = false;
+            }
         }
 
         private void EmployeeDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (userRole == "Admin")
+            {
             empidtb.Text = EmployeeDataGridView.SelectedRows[0].Cells[0].Value.ToString();
             empnametb.Text = EmployeeDataGridView.SelectedRows[0].Cells[1].Value.ToString();
             empsaltb.Text = EmployeeDataGridView.SelectedRows[0].Cells[2].Value.ToString();
             empagetb.Text = EmployeeDataGridView.SelectedRows[0].Cells[3].Value.ToString();
             empphonetb.Text = EmployeeDataGridView.SelectedRows[0].Cells[4].Value.ToString();
             emppasstb.Text = EmployeeDataGridView.SelectedRows[0].Cells[5].Value.ToString();
+            }
+            else
+            {
+                empnametb.Text = EmployeeDataGridView.SelectedRows[0].Cells[0].Value.ToString();
+                empphonetb.Text = EmployeeDataGridView.SelectedRows[0].Cells[1].Value.ToString();
+                string selectedRole = EmployeeDataGridView.SelectedRows[0].Cells[2].Value.ToString();
+                rolescb.SelectedValue = selectedRole;
+            }
+
         }
 
         //BEGIN FOCUS HANDLERS

@@ -135,24 +135,22 @@ namespace Pharmacy_Management
 
 		private void home_options_MouseEnter(object sender, EventArgs e)
 		{
-			options_lbl.Visible = true;
 			home_options.Size = new Size(home_options.Width + 10, home_options.Height + 10);
 		}
 		private void home_options_MouseLeave(object sender, EventArgs e)
 		{
-			options_lbl.Visible = false;
 			home_options.Size = new Size(home_options.Width - 10, home_options.Height - 10);
 		}
 
 		private void logout_icon_MouseEnter(object sender, EventArgs e)
 		{
-			logout_lbl.Visible = true;
+			
 			logout_icon.Size = new Size(logout_icon.Width + 10, logout_icon.Height + 10);
 		}
 
 		private void logout_icon_MouseLeave(object sender, EventArgs e)
 		{
-			logout_lbl.Visible = false;
+			
 			logout_icon.Size = new Size(logout_icon.Width - 10, logout_icon.Height - 10);
 		}
 

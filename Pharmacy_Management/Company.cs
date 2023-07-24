@@ -27,7 +27,16 @@ namespace Pharmacy_Management
         public void populate()
         {
             dbConnection.Open();
-            string Myquery = "select * from Company_tbl";
+            
+            string Myquery;
+            if (userRole == "Admin")
+            {
+                Myquery = "select * from Company_tbl";
+            }
+            else
+            {
+                Myquery = "select CompName, CompAddress from Company_tbl";
+            }
             SqlDataAdapter dataAdapter = new SqlDataAdapter(Myquery, dbConnection);
             SqlCommandBuilder commandBuilder = new SqlCommandBuilder(dataAdapter);
             var ds = new DataSet();
@@ -233,14 +242,29 @@ namespace Pharmacy_Management
             //    populate();
             //}
             populate();
+
+            if (userRole != "Admin")
+            {
+                compphonetb.Enabled = false;
+                compnametb.Enabled = false;
+                compaddrtb.Enabled = false;
+            }
         }
 
         private void CompanyDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (userRole == "Admin")
+            {
             companyidtb.Text = CompanyDataGridView.SelectedRows[0].Cells[0].Value.ToString();
             compnametb.Text = CompanyDataGridView.SelectedRows[0].Cells[1].Value.ToString();
             compphonetb.Text = CompanyDataGridView.SelectedRows[0].Cells[2].Value.ToString();
             compaddrtb.Text = CompanyDataGridView.SelectedRows[0].Cells[3].Value.ToString();
+            }
+            else
+            {
+                compnametb.Text = CompanyDataGridView.SelectedRows[0].Cells[0].Value.ToString();
+                compaddrtb.Text = CompanyDataGridView.SelectedRows[0].Cells[1].Value.ToString();
+            }
         }
 
         //BEGIN FOCUS HANDLERS

@@ -27,7 +27,15 @@ namespace Pharmacy_Management
         public void populate()
         {
             dbConnection.Open();
-            string Myquery = "select * from Roles_tbl";
+            string Myquery; ;
+            if(userRole == "Admin")
+            {
+                Myquery = "select * from Roles_tbl";
+            }
+            else
+            {
+                Myquery = "select * from Roles_tbl";
+            }
             SqlDataAdapter dataAdapter = new SqlDataAdapter(Myquery, dbConnection);
             SqlCommandBuilder commandBuilder = new SqlCommandBuilder(dataAdapter);
             var ds = new DataSet();
