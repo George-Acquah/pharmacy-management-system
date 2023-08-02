@@ -108,6 +108,12 @@
       <DependentUpon>HomeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="logging\EmployeeActivityLogger.cs" />
+    <Compile Include="LogHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogHistoryForm.Designer.cs">
+      <DependentUpon>LogHistoryForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HomeForm.resx">
       <DependentUpon>HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogHistoryForm.resx">
+      <DependentUpon>LogHistoryForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

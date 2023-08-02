@@ -1,4 +1,5 @@
 ﻿using Guna.UI2.WinForms.Suite;
+using Pharmacy_Management.logging;
 using Pharmacy_Management.utils.contexts;
 using System;
 using System.Collections.Generic;
@@ -28,10 +29,14 @@ namespace Pharmacy_Management
 			FormManager.RegisterForm("BillingForm", new BillingForm());
 			FormManager.RegisterForm("LoginForm", new Login());
 			FormManager.RegisterForm("OptionsForm", new OptionsForm());
+			FormManager.RegisterForm("LogHistory", new LogHistoryForm());
 
-			string userRole = MyAppContext.UserRole;
+            string userRole = MyAppContext.UserRole;
 			string employeeId = MyAppContext.EmpID;
 			string userName = MyAppContext.userName;
+			int logCount = MyAppContext.LoginCount;
+
+			Console.WriteLine("log count: " + logCount);
 
 
 
@@ -108,10 +113,12 @@ namespace Pharmacy_Management
 
 		private void logout_icon_Click(object sender, EventArgs e)
 		{
-			DialogResult exitDialog = MessageBox.Show("Are you sure you want to logout?", "Logout", MessageBoxButtons.YesNoCancel);
+            string employeeId = MyAppContext.EmpID;
+            DialogResult exitDialog = MessageBox.Show("Are you sure you want to logout?", "Logout", MessageBoxButtons.YesNoCancel);
 			if (exitDialog == DialogResult.Yes)
 			{
 				FormManager.NavigateTo("LoginForm");
+				EmployeeActivityLogger.LogLogout(employeeId);
 				this.Hide();
 			}
 		}
@@ -200,5 +207,21 @@ namespace Pharmacy_Management
 			this.Hide();
 		}
 
+        private void bunifuCards1_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void bunifuCards1_Click(object sender, EventArgs e)
+        {
+            FormManager.NavigateTo("LogHistory");
+            this.Hide();
+        }
+
+        private void bunifuGauge1_Click(object sender, EventArgs e)
+        {
+            FormManager.NavigateTo("LogHistory");
+            this.Hide();
+        }
     }
 }

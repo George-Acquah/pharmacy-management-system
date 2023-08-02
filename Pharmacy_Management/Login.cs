@@ -1,4 +1,5 @@
 ﻿using Pharmacy_Management.auth;
+using Pharmacy_Management.logging;
 using Pharmacy_Management.utils.connections;
 using Pharmacy_Management.utils.contexts;
 using System;
@@ -103,6 +104,7 @@ namespace Pharmacy_Management
                     // Close the login form
                     this.Hide();
                 }
+                EmployeeActivityLogger.LogLogin(employeeId);
                 
             }
             else

@@ -46,3 +46,4 @@ D:\Personal\Dev\C#\Projects\Estee\Projects\Pharmacy_Management\Pharmacy_Manageme
 D:\Personal\Dev\C#\Projects\Estee\Projects\Pharmacy_Management\Pharmacy_Management\obj\Debug\Pharmacy_Management.ForgotPass.resources
 D:\Personal\Dev\C#\Projects\Estee\Projects\Pharmacy_Management\Pharmacy_Management\obj\Debug\Pharmacy_Management.AdminResetForm.resources
 D:\Personal\Dev\C#\Projects\Estee\Projects\Pharmacy_Management\Pharmacy_Management\obj\Debug\Pharmacy_Management.AdminResetPassword.resources
+D:\Personal\Dev\C#\Projects\Estee\Projects\Pharmacy_Management\Pharmacy_Management\obj\Debug\Pharmacy_Management.LogHistoryForm.resources

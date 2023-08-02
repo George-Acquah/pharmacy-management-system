@@ -50,12 +50,15 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.bunifuCards2 = new Bunifu.Framework.UI.BunifuCards();
+            this.bunifuGauge4 = new Bunifu.Framework.UI.BunifuGauge();
             this.bunifuSwitch2 = new Bunifu.Framework.UI.BunifuSwitch();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.bunifuCards3 = new Bunifu.Framework.UI.BunifuCards();
+            this.bunifuGauge2 = new Bunifu.Framework.UI.BunifuGauge();
             this.bunifuSwitch3 = new Bunifu.Framework.UI.BunifuSwitch();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.bunifuCards4 = new Bunifu.Framework.UI.BunifuCards();
+            this.bunifuGauge3 = new Bunifu.Framework.UI.BunifuGauge();
             this.bunifuSwitch4 = new Bunifu.Framework.UI.BunifuSwitch();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
@@ -63,9 +66,6 @@
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.bunifuGauge1 = new Bunifu.Framework.UI.BunifuGauge();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.bunifuGauge2 = new Bunifu.Framework.UI.BunifuGauge();
-            this.bunifuGauge3 = new Bunifu.Framework.UI.BunifuGauge();
-            this.bunifuGauge4 = new Bunifu.Framework.UI.BunifuGauge();
             ((System.ComponentModel.ISupportInitialize)(this.medicine_icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.companies_icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employees_icon)).BeginInit();
@@ -363,6 +363,23 @@
             this.bunifuCards2.Size = new System.Drawing.Size(197, 181);
             this.bunifuCards2.TabIndex = 36;
             // 
+            // bunifuGauge4
+            // 
+            this.bunifuGauge4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGauge4.BackgroundImage")));
+            this.bunifuGauge4.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.bunifuGauge4.ForeColor = System.Drawing.Color.White;
+            this.bunifuGauge4.Location = new System.Drawing.Point(6, 43);
+            this.bunifuGauge4.Margin = new System.Windows.Forms.Padding(6);
+            this.bunifuGauge4.Name = "bunifuGauge4";
+            this.bunifuGauge4.ProgressBgColor = System.Drawing.Color.DarkCyan;
+            this.bunifuGauge4.ProgressColor1 = System.Drawing.Color.White;
+            this.bunifuGauge4.ProgressColor2 = System.Drawing.Color.Cyan;
+            this.bunifuGauge4.Size = new System.Drawing.Size(174, 104);
+            this.bunifuGauge4.Suffix = "";
+            this.bunifuGauge4.TabIndex = 37;
+            this.bunifuGauge4.Thickness = 30;
+            this.bunifuGauge4.Value = 20;
+            // 
             // bunifuSwitch2
             // 
             this.bunifuSwitch2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -409,6 +426,23 @@
             this.bunifuCards3.Size = new System.Drawing.Size(197, 181);
             this.bunifuCards3.TabIndex = 36;
             // 
+            // bunifuGauge2
+            // 
+            this.bunifuGauge2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGauge2.BackgroundImage")));
+            this.bunifuGauge2.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.bunifuGauge2.ForeColor = System.Drawing.Color.White;
+            this.bunifuGauge2.Location = new System.Drawing.Point(17, 43);
+            this.bunifuGauge2.Margin = new System.Windows.Forms.Padding(6);
+            this.bunifuGauge2.Name = "bunifuGauge2";
+            this.bunifuGauge2.ProgressBgColor = System.Drawing.Color.DarkCyan;
+            this.bunifuGauge2.ProgressColor1 = System.Drawing.Color.White;
+            this.bunifuGauge2.ProgressColor2 = System.Drawing.Color.Cyan;
+            this.bunifuGauge2.Size = new System.Drawing.Size(174, 104);
+            this.bunifuGauge2.Suffix = "";
+            this.bunifuGauge2.TabIndex = 36;
+            this.bunifuGauge2.Thickness = 30;
+            this.bunifuGauge2.Value = 20;
+            // 
             // bunifuSwitch3
             // 
             this.bunifuSwitch3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -452,6 +486,23 @@
             this.bunifuCards4.ShadowDepth = 20;
             this.bunifuCards4.Size = new System.Drawing.Size(197, 181);
             this.bunifuCards4.TabIndex = 36;
+            // 
+            // bunifuGauge3
+            // 
+            this.bunifuGauge3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGauge3.BackgroundImage")));
+            this.bunifuGauge3.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.bunifuGauge3.ForeColor = System.Drawing.Color.White;
+            this.bunifuGauge3.Location = new System.Drawing.Point(6, 46);
+            this.bunifuGauge3.Margin = new System.Windows.Forms.Padding(6);
+            this.bunifuGauge3.Name = "bunifuGauge3";
+            this.bunifuGauge3.ProgressBgColor = System.Drawing.Color.DarkCyan;
+            this.bunifuGauge3.ProgressColor1 = System.Drawing.Color.White;
+            this.bunifuGauge3.ProgressColor2 = System.Drawing.Color.Cyan;
+            this.bunifuGauge3.Size = new System.Drawing.Size(174, 104);
+            this.bunifuGauge3.Suffix = "";
+            this.bunifuGauge3.TabIndex = 38;
+            this.bunifuGauge3.Thickness = 30;
+            this.bunifuGauge3.Value = 20;
             // 
             // bunifuSwitch4
             // 
@@ -497,6 +548,8 @@
             this.bunifuCards1.ShadowDepth = 20;
             this.bunifuCards1.Size = new System.Drawing.Size(197, 181);
             this.bunifuCards1.TabIndex = 35;
+            this.bunifuCards1.Click += new System.EventHandler(this.bunifuCards1_Click);
+            this.bunifuCards1.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuCards1_Paint);
             // 
             // bunifuSwitch1
             // 
@@ -541,6 +594,7 @@
             this.bunifuGauge1.TabIndex = 1;
             this.bunifuGauge1.Thickness = 30;
             this.bunifuGauge1.Value = 20;
+            this.bunifuGauge1.Click += new System.EventHandler(this.bunifuGauge1_Click);
             // 
             // guna2HtmlLabel2
             // 
@@ -552,57 +606,6 @@
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(387, 37);
             this.guna2HtmlLabel2.TabIndex = 31;
             this.guna2HtmlLabel2.Text = "DASHBOARD ANALYTICS";
-            // 
-            // bunifuGauge2
-            // 
-            this.bunifuGauge2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGauge2.BackgroundImage")));
-            this.bunifuGauge2.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.bunifuGauge2.ForeColor = System.Drawing.Color.White;
-            this.bunifuGauge2.Location = new System.Drawing.Point(17, 43);
-            this.bunifuGauge2.Margin = new System.Windows.Forms.Padding(6);
-            this.bunifuGauge2.Name = "bunifuGauge2";
-            this.bunifuGauge2.ProgressBgColor = System.Drawing.Color.DarkCyan;
-            this.bunifuGauge2.ProgressColor1 = System.Drawing.Color.White;
-            this.bunifuGauge2.ProgressColor2 = System.Drawing.Color.Cyan;
-            this.bunifuGauge2.Size = new System.Drawing.Size(174, 104);
-            this.bunifuGauge2.Suffix = "";
-            this.bunifuGauge2.TabIndex = 36;
-            this.bunifuGauge2.Thickness = 30;
-            this.bunifuGauge2.Value = 20;
-            // 
-            // bunifuGauge3
-            // 
-            this.bunifuGauge3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGauge3.BackgroundImage")));
-            this.bunifuGauge3.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.bunifuGauge3.ForeColor = System.Drawing.Color.White;
-            this.bunifuGauge3.Location = new System.Drawing.Point(6, 46);
-            this.bunifuGauge3.Margin = new System.Windows.Forms.Padding(6);
-            this.bunifuGauge3.Name = "bunifuGauge3";
-            this.bunifuGauge3.ProgressBgColor = System.Drawing.Color.DarkCyan;
-            this.bunifuGauge3.ProgressColor1 = System.Drawing.Color.White;
-            this.bunifuGauge3.ProgressColor2 = System.Drawing.Color.Cyan;
-            this.bunifuGauge3.Size = new System.Drawing.Size(174, 104);
-            this.bunifuGauge3.Suffix = "";
-            this.bunifuGauge3.TabIndex = 38;
-            this.bunifuGauge3.Thickness = 30;
-            this.bunifuGauge3.Value = 20;
-            // 
-            // bunifuGauge4
-            // 
-            this.bunifuGauge4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGauge4.BackgroundImage")));
-            this.bunifuGauge4.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.bunifuGauge4.ForeColor = System.Drawing.Color.White;
-            this.bunifuGauge4.Location = new System.Drawing.Point(6, 43);
-            this.bunifuGauge4.Margin = new System.Windows.Forms.Padding(6);
-            this.bunifuGauge4.Name = "bunifuGauge4";
-            this.bunifuGauge4.ProgressBgColor = System.Drawing.Color.DarkCyan;
-            this.bunifuGauge4.ProgressColor1 = System.Drawing.Color.White;
-            this.bunifuGauge4.ProgressColor2 = System.Drawing.Color.Cyan;
-            this.bunifuGauge4.Size = new System.Drawing.Size(174, 104);
-            this.bunifuGauge4.Suffix = "";
-            this.bunifuGauge4.TabIndex = 37;
-            this.bunifuGauge4.Thickness = 30;
-            this.bunifuGauge4.Value = 20;
             // 
             // HomeForm
             // 

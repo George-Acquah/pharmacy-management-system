@@ -21,10 +21,18 @@ namespace Pharmacy_Management.utils.contexts
         private static int _roleId;
         private static int _saleId;
 
+        private static int _loginCount;
+
         public static string UserRole
         {
             get { return _userRole; }
             set { _userRole = value; }
+        }
+
+        public static int LoginCount
+        {
+            get { return _loginCount; }
+            set { _loginCount = value; }
         }
 
         public static string EmpID

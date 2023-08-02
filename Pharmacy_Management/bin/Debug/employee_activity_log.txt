@@ -1,0 +1,31 @@
+2023-07-24 17:08:20 - Employee: 1005 logged in
+2023-07-24 17:12:17 - Employee: 1005 logged out
+2023-07-24 17:29:07 - Employee: 1003 logged in
+2023-07-24 17:30:41 - Employee: 1005 logged in
+17:33:22 - Employee: 1005 logged in
+2023-07-24 17:33:38 - Employee: 1005 logged out
+2023-07-24 17:35:49 - Employee: 1005 logged in
+2023-07-24 17:49:34 - Employee: 1005 logged in
+2023-07-24 17:51:54 - Employee: 1005 logged in
+2023-07-24 17:52:53 - Employee: 1005 logged out
+2023-07-25 10:45:53 - Employee: 1005 logged in
+2023-07-25 10:48:31 - Employee: 1005 logged out
+2023-07-25 12:08:33 - Employee: 1005 logged in
+2023-07-25 12:47:17 - Employee: 1005 logged out
+2023-07-25 12:47:55 - Employee:  logged in
+2023-07-26 17:44:13 - Employee: 1005 logged in
+2023-07-26 18:08:16 - Employee: 1005 logged in
+2023-07-26 18:10:27 - Employee: 1005 logged in
+2023-07-26 18:11:49 - Employee: 1005 logged in
+2023-07-26 18:24:05 - Employee: 1005 logged in
+2023-07-26 18:26:03 - Employee: 1005 logged in
+2023-07-26 18:28:31 - Employee: 1005 logged in
+2023-07-26 18:29:27 - Employee: 1005 logged in
+2023-07-26 18:31:27 - Employee:  logged in
+2023-07-26 18:32:16 - Employee:  logged in
+2023-07-26 18:33:30 - Employee:  logged in
+2023-07-26 18:34:11 - Employee:  logged in
+2023-07-26 18:35:05 - Employee:  logged in
+2023-07-26 18:35:34 - Employee: 1005 logged in
+2023-07-26 18:42:28 - Employee: 1005 logged in
+2023-07-26 20:57:11 - Employee: 1005 logged in
